@@ -12,6 +12,23 @@ root.iconbitmap(r"img/logo32.ico")
 
 root.geometry('650x350')    #tamano inicial de la ventana
 
-root.config(bg='green')     #color del fondo de la ventana
+root.config(bg='gray')     #color del fondo de la ventana
 
+
+def mensaje():
+    print('mensaje del boton')
+
+#CREANDO UN LABEL
+lbl = Label(root, text='enviar mensaje')
+#CREANDO UN BOTON
+btn = Button(root, text='mensaje', command=mensaje, bg='black', fg='white')
+
+
+
+
+
+
+
+lbl.pack()  #siempre se debe ejecutar esto para q los widgets se muestren en la ventana
+btn.pack()
 root.mainloop()

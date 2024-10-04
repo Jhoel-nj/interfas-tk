@@ -1,0 +1,9 @@
+propiedades de WIDGETS
+ejemplo:
+    btn = Button(text='', fg='', bg='')
+fg es el color del texto
+bg es el color de fondo
+text sera el texto que muestra ese widget
+
+tambien se puede usar btn.config(text='', fg='', bg='')
+
